@@ -23,10 +23,23 @@ module.exports = {
                 test: /\.css$/, use: [
                     {loader: "style-loader"},
                     {loader: "css-loader"},
-                    {loader: "sass-loader"}
+                ],
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader",
                 ]
             }
         ]
+    },
+
+    devServer: {
+        contentBase: path.join(__dirname, 'static/dist'),
+        compress: true,
+        port: 9000
     },
 
     resolve: {

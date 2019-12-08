@@ -6,6 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "dev": "npm run webpack -- --mode development --watch",
+    "start:dev": "webpack-dev-server",
     "build": "npm run webpack -- --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,15 +14,25 @@
   "author": "Javad Ghasemi",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "css-loader": "^3.2.0",
     "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "webpack": "^4.41.2",
     "webpack-bundle-tracker": "^0.4.3",
     "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0",
     "write-file-webpack-plugin": "^4.5.1"
   },
   "dependencies": {
-    "sass-loader": "^8.0.0",
+    "animate.css": "^3.7.2",
+    "bootstrap-v4-rtl": "^4.4.1-1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0",
     "style-loader": "^1.0.1"
   }
 }
